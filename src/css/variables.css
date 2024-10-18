@@ -1,0 +1,23 @@
+:root {
+    --color-primary-black: #161616;
+    --color-primary-white: #ffffff;
+    --color-primary-offwhite: #f5f5f5;
+
+    --font-size-small: 0.75rem;
+    --font-size-medium: 1rem;
+    --font-size-large: 1.5rem;
+
+    --padding-extra-small: 0.5rem;
+    --padding-small: 0.75rem;
+    --padding-medium: 1rem;
+    --padding-large: 1.5rem;
+    --padding-extra-large: 2rem;
+    --padding-xxl: 3rem;
+
+    --margin-extra-small: 0.5rem;
+    --margin-small: 0.75rem;
+    --margin-medium: 1rem;
+    --margin-large: 1.5rem;
+    --margin-extra-large: 2rem;
+    --margin-xxl: 3rem;
+}

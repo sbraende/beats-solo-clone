@@ -4,42 +4,75 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Beats Solo 4</title>
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/variables.css">
+    <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
     <header class="main-header">
-        <img src="./assets/images/beats-logo.png"/>
-        <nav class="header-nav">
-            <ul>
+        <div class="main-header__logo-container">
+            <img class="main-header__logo-img" src="./assets/images/beats-logo.png">
+        </div>
+        <nav class="main-header__nav">
+            <ul class="main-header__nav-list">
                 <li>Shop</li>
                 <li>Support</li>
             </ul>
-        <search>Search</search>
         </nav>
+        <div class="main-header__search-container">
+            <img class="main-header__search-icon" src="./assets/icons/search-sharp.svg" alt="Search icon">
+        </div>
     </header>
     <body>
         <section>
-            <div>
-                <img src="./assets/images/black-01-solo4.jpg" alt="">
+            <div class="delivery-bar">
+                <a class="delivery-link" href="#">
+                    <p class="delivery-text">Choose two-hour courier or free delivery</p>
+                    <img class="delivery-icon" src="./assets/icons/open-outline.svg" alt="Open external link icon">
+                </a>
             </div>
-            <div>
-                <h1>Beats Solo 4</h1>
-                <p>Stands Out. Stays On.</p>
-                <p>$199.99</p>
-                <p>Color: Matte Black</p>
-                <ul>
-                    <li>Matte Black(radio)</li>
-                    <li>Slate Blue(radio)</li>
-                    <li>Cloud Pink(radio)</li>
-                    <li>Charged Black(radio)</li>
-                </ul>
-                <button>ADD TO BAG</button>
+        </section>
+        <section class="product-section">
+            <div class="product-thumbnails" >
+                 <img class="product-thumbnail" src="./assets/images/black-01-solo-product01.jpg" alt="product image of black beats headphones three quarter angle">
+                 <img class="product-thumbnail" src="./assets/images/black-02-solo-product01.jpg" alt="black beats headphones on man">
+                 <img class="product-thumbnail" src="./assets/images/black-03-solo4.jpg.large.2x.jpg" alt="product image of black beats headphones front on">
+                 <img class="product-thumbnail" src="./assets/images/black-04-solo4.jpg.large.2x.jpg" alt="beats headphones pairing with iphone">
+                 <img class="product-thumbnail" src="./assets/images/black-05-solo4.jpg.large.2x.jpg" alt="blue beats headphones on man">
+                 <img class="product-thumbnail" src="./assets/images/black-06-solo4.jpg.large.2x.jpg" alt="black beat headphones folded product image">
+                 <img class="product-thumbnail" src="./assets/images/black-07-solo4.jpg.large.2x.jpg" alt="black beat headphones with surround symbols">
+            </div>
+            <div class="product-img-container">
+                <img class="product-img" src="./assets/images/black-01-solo-product01.webp" alt="product image of black beats headphones three quarter angle">
+            </div>
+            <div class="product-sidebar-container">
+                <h1 class="product-header">Beats Solo 4</h1>
+                <p class="product-slogan">Stands Out. Stays On.</p>
+                <p class="product-price">$199.99</p>
+                    <p>Color: <b>Matte Black</b></p>
+                    <div>
+                        <input class="product-radio" type="radio" name="color" id="Matte Black" required checked>
+                        <input class="product-radio" type="radio" name="color" id="Slate Blue" required disabled>
+                        <input class="product-radio" type="radio" name="color" id="Cloud Pink" required disabled>
+                        <input class="product-radio" type="radio" name="color" id="Charged Black" required disabled>
+                    </div>
 
-                <hr>
+                <button class="buy-button">
+                    <p class="buy-text">ADD TO BAG</p>
+                    <img class="buy-icon" src="../src/assets/icons/apple-173-svgrepo-com-inverted.svg" alt="apple logo">
+                </button>
+
                 <ul>
-                    <li>
-                        <p>Free Shipping and Returns</p>
-                        <p>Enjoy free 2-day delivery and 14-day returns.</p>
+                    <li class="keyfeatures-list">
+                        <div class="keyfeatures-container">
+                            <div>
+                                <img src="" alt="">
+                            </div>
+                            <div>
+                                <p>Free Shipping and Returns</p>
+                                <p>Enjoy free 2-day delivery and 14-day returns.</p>
+                            </div>
+                        </div>
                     </li>
                     <li>
                         <p>In-store pickup</p>
@@ -50,7 +83,7 @@
                         <p>Get 3 months of access to over 100 million songs, ad-free.</p>
                     </li>
                 </ul>
-                <hr>
+
             </div>
         </section>
         <section>
