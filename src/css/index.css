@@ -155,7 +155,7 @@ body {
     padding-bottom: 2.5rem;
 }
 
-.product__sidebar{
+.product__details{
     grid-column: 2/3;
     grid-row: 2/3;
     padding: 0 var(--padding-medium);
@@ -226,11 +226,16 @@ body {
 
 .features{
     max-width: 1200px;
-    padding: 0 var(--padding-xxl);
+    padding: var(--padding-extra-large) var(--padding-extra-large);
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: var(--padding-extra-large);
+    text-align: center;
+}
+
+.features__title{
+    font-size: 32px;
 }
 
 .features__grid{
@@ -243,7 +248,6 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
     gap: var(--padding-large);
 }
 
@@ -274,7 +278,7 @@ body {
         gap: var(--padding-medium);
         padding-left: 8px;
         background-color: var(--color-primary-offwhite);
-        overflow-x: hidden;
+        overflow-x: auto;
     }
     
     .product__thumbnail-img{
@@ -297,6 +301,10 @@ body {
 }
 
 @media screen and (max-width:768px) {
+    .main-header{
+        padding: var(--padding-small) var(--padding-large);
+    }
+
     .main-header__logo-container{
         order: 2;
         margin: auto;
@@ -331,5 +339,58 @@ body {
         height: 14px;
     }
 
-    
+    .product{
+        padding: 0;
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(3, auto);
+    }
+
+    .product__title{
+        grid-column: 1/2;
+        grid-row: 1/2;
+        padding: 0 var(--padding-extra-large);
+    }
+
+    .product__header{
+        padding-top: var(--padding-large);
+    }
+
+    .product__slogan{
+        padding-bottom: var(--padding-medium);
+    }
+
+    .product__image-container{
+        grid-column: 1/2;
+        grid-row: 2/3;
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .product__thumbnail-container{
+        padding-left: var(--padding-large);
+        width: 100%;
+    }
+
+    .product__main-product-image{
+        max-width: 80%;
+    }
+
+    .product__details{
+        grid-column: 1/2;
+        grid-row: 3/4;
+        padding-top: var(--padding-extra-large);
+        padding-left: var(--padding-extra-large);
+    }
+
+    .product__price{
+        padding-bottom: 2.5rem;
+        font-size: 1.3rem;
+        font-weight: 700;
+    }
+
+    .features__grid{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        gap: var(--padding-large);
+    }
 }
