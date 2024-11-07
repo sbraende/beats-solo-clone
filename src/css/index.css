@@ -373,6 +373,10 @@ footer{
     padding-top: var(--padding-xxl);
 }
 
+.sitenav__category-expand{
+    display: none;
+}
+
 .sitenav__category-links{
     display: flex;
     flex-direction: column;
@@ -401,7 +405,7 @@ footer{
     gap: var(--padding-medium);
 }
 
-.sitenav__social > img {
+.sitenav__social > a > img {
     width: 30px;
 }
 
@@ -470,8 +474,20 @@ footer{
     }
 
     .sitenav__category-title{
+        padding: var(--padding-small) 0;
+    }
+
+    .sitenav__category-expand{
+        display: block;
+    }
+
+    .sitenav__category-header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
         padding: var(--padding-medium) 0;
         border-top: 1px solid var(--color-secondary-gray);
+        cursor: pointer;
     }
 
     .sitenav__title-followus{
