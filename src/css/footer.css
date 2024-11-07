@@ -1,0 +1,124 @@
+
+footer{
+    padding: var(--padding-medium) 0 var(--padding-xxl) 0;
+    width: 90%;
+    max-width: 1320px;
+}
+
+.breadcrumbs{
+    padding: var(--padding-large) 0;
+    display: flex;
+    gap: var(--padding-extra-small);
+    align-items: center;
+}
+
+.breadcrumbs__icon{
+    width: 16px;
+}
+
+
+.sitenav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
+
+.sitenav__category-title{
+    font-weight: 700;
+    padding-bottom: var(--padding-large);
+}
+
+.sitenav__category-title-2nd{
+    padding-top: var(--padding-xxl);
+}
+
+.sitenav__category-expand{
+    display: none;
+}
+
+.sitenav__category-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.sitenav__category-links > a{
+    padding-bottom: 4px;
+    color: black;
+    font-weight: 300;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+}
+
+.sitenav__category-links > a:hover {
+    border-bottom: 2px solid #e01e3c;
+}
+
+.sitenav__locale{
+    width: 215px;
+    cursor: pointer;
+}
+
+.sitenav__social{
+    display: flex;
+    gap: var(--padding-medium);
+}
+
+.sitenav__social > a > img {
+    width: 30px;
+}
+
+.copyright{
+    padding: 6rem 0 8rem 0;
+    text-align: center;
+    color: var(--color-secondary-gray);
+}
+
+.copyright__link{
+    color: var(--color-secondary-gray);
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 1024px) {
+    .sitenav{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .sitenav__category-title{
+        padding: var(--padding-small) 0;
+    }
+
+    .sitenav__category-expand{
+        display: block;
+    }
+
+    .sitenav__category-header{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        padding: var(--padding-medium) 0;
+        border-top: 1px solid var(--color-secondary-gray);
+        cursor: pointer;
+    }
+
+    .sitenav__title-followus{
+        display: none;
+    }
+
+    .sitenav__category-links{
+        display: none;
+    }
+
+    .sitenav__social-section{
+        padding-top: var(--padding-xxl);
+        display: flex;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+}
