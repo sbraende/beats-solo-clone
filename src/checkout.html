@@ -27,138 +27,26 @@
         </div>
     </header>
     <main>
-        <section class="delivery-bar">
-            <div class="delivery-bar__container">
-                <a class="delivery-bar__link" href="#">
-                    <p class="delivery-bar__text">Choose two-hour courier or free delivery</p>
-                    <img class="delivery-bar__icon" src="./assets/icons/open-outline.svg" alt="Open external link icon">
-                </a>
-            </div>
-        </section>
-        <section class="product">
-            <div class="product__image-container">
-                <div class="product__thumbnail-container" >
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-01-solo-product01.jpg" alt="product image of black beats headphones three quarter angle">
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-02-solo-product01.jpg" alt="black beats headphones on man">
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-03-solo4.jpg.large.2x.jpg" alt="product image of black beats headphones front on">
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-04-solo4.jpg.large.2x.jpg" alt="beats headphones pairing with iphone">
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-05-solo4.jpg.large.2x.jpg" alt="blue beats headphones on man">
-                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-06-solo4.jpg.large.2x.jpg" alt="black beat headphones folded product image">
-                </div>
-                <div class="product__main-image-container">
-                    <img class="product__main-product-image" src="./assets/images/product-photos/black-01-solo-product01-square.webp" alt="product image of black beats headphones three quarter angle">
-                </div>
-            </div>
-            <div class="product__title">
-                <h1 class="product__header">Beats Solo 4</h1>
-                <p class="product__slogan">Stands Out. Stays On.</p>
-            </div>
-            <div class="product__details">
-                <p class="product__price">$199.99</p>
-                    <p>Color: <b>Matte Black</b></p>
-                    <div>
-                        <input class="product__radio" type="radio" name="color" id="Matte Black" required checked>
-                        <input class="product__radio" type="radio" name="color" id="Slate Blue" required disabled>
-                        <input class="product__radio" type="radio" name="color" id="Cloud Pink" required disabled>
-                        <input class="product__radio" type="radio" name="color" id="Charged Black" required disabled>
-                    </div>
-                <button class="product__buy-button">
-                    <p class="product__buy-text">ADD TO BAG</p>
-                    <img class="product__buy-icon" src="./assets/icons/apple-173-svgrepo-com-inverted.svg" alt="apple logo">
-                </button>
-                <ul class="product__keyfeatures">
-                    <li class="product__keyfeatures-list">
-                        <div class="product__keyfeatures-container">
-                            <div>
-                                <img class="product__keyfeatures-icon" src="./assets/icons/free-shipping-icon.png" alt="">
-                            </div>
-                            <div>
-                                <p class="product__keyfeatures-title"><strong>Free Shipping and Returns</strong></p>
-                                <p class="product__keyfeatures-text">Enjoy free 2-day delivery and 14-day returns.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product__keyfeatures-list">
-                        <div class="product__keyfeatures-container">
-                            <div>
-                                <img class="product__keyfeatures-icon" src="./assets/icons/in-store-pickup-icon.png" alt="">
-                            </div>
-                            <div>
-                                <p class="product__keyfeatures-title"><strong>In-store pickup</strong></p>
-                                <p class="product__keyfeatures-text">Pick up your Beats at an Apple Store near you.</p>
-                            </div>
-                        </div>
-                    </li>
-                    <li class="product__keyfeatures-list">
-                        <div class="product__keyfeatures-container">
-                            <div>
-                                <img class="product__keyfeatures-icon" src="./assets/icons/apple-music-icon.png" alt="">
-                            </div>
-                            <div>
-                                <p class="product__keyfeatures-title"><strong>Free Apple Music trial</strong></p>
-                                <p class="product__keyfeatures-text">Get 3 months of access to over 100 million songs, ad-free.</p>
-                            </div>
-                        </div>
-                    </li>
-                </ul>
-            </div>
-        </section>
+        <h1>Where should we send your order?</h1>
+        <form action="">
+            <h2>Enter your name and address:</h2>
+            <input type="text" name="" id="" placeholder="First Name">
+            <input type="text" name="" id="" placeholder="Last Name">
+            <input type="text" name="" id="" placeholder="Street Address">
+            <input type="text" name="" id="" placeholder="Apt, Suite, Building (Optional)">
+            <input type="number" name="" id="" placeholder="Zip Code">
+            <select name="" id="">
+                <option value="">Brooklyn, NY</option>
+                <option value="">Other</option>
+            </select>
+            <input type="text" name="" id="" placeholder="Country/Region">
+            <input type="checkbox" name="business-address" id="">
+            <label for="business-address">This is a business address. <button></button></label>
 
-        <section class="features">
-            <h2 class="features__title">Beats Solo 4 - Bluetooth <sup>&#174</sup> Wireless On-Ear Headphones</h2>
-            <div class="features__grid">
-                <div class="features__container">
-                    <img class="features__icon" src="./assets/images/features/spatial_audio.png" alt="">
-                    <p>Spatial Audio with Dynamic Head Tracking <sup>1</sup></p>
-                </div>
-                <div class="features__container">
-                    <img class="features__icon" src="./assets/images/features/plug.png" alt="">
-                    <p>Lossless Audio via USB-C or 3.5 mm Audio Cable<sup>2</sup></p>
-                </div>
-                <div class="features__container">
-                    <img class="features__icon" src="./assets/images/features/battery.png" alt="">
-                    <p>Up to 50 Hours of Battery Life<sup>3</sup></p>
-                </div>
-                <div class="features__container">
-                    <img class="features__icon" src="./assets/images/features/phone.png" alt="">
-                    <p>Compatible with iOS and Android</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="tech-specs">
-            <div class="tech-specs__container">
-                <h2 class="tech-specs__title">View Tech Specs</2>
-                <img class="tech-specs__icon" src="./assets/icons/down-arrow.png" alt="">
-            </div>
-        </section>
-
-        <section class="video">
-            <div class="video__container">
-                <video
-                    class="video__content"
-                    controls
-                    poster="./assets/images/video_posters/video_poster.png"
-                >
-                    <a href="./assets/videos/solo4-behind-the-design.mp4.rendition.mp4">Download video</a>
-                    <source src="./assets/videos/solo4-behind-the-design.mp4.rendition.mp4" type="video/mp4">
-                </video>
-                <img class="video__play-icon" src="./assets/icons/play.svg" alt="">
-            </div>
-        </section>
-
-        <section class="email-list">
-            <img class="email-list__mail-icon" src="./assets/icons/mail.svg" alt="">
-            <h2 class="email-list__title">Join Our List</h2>
-            <p>Don't miss a beat. Stay up to date on the latest products, deals and more.</p>
-            <input 
-                class="email-list__input" 
-                type="email" 
-                name="" 
-                id=""
-                placeholder="Email Address"
-            >
-        </section>
+            <h2>What's your contact information?</h2>
+            <input type="email" name="" id="" placeholder="Email Address">
+            <input type="tel" name="" id="" placeholder="Phone Number">
+        </form>
     </main>
     <footer>
         <nav class="breadcrumbs"> 
