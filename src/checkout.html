@@ -6,7 +6,9 @@
     <title>Beats Solo 4</title>
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/variables.css">
-    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/checkout.css">
 </head>
 <body>
     <header class="main-header">
@@ -27,26 +29,67 @@
         </div>
     </header>
     <main>
-        <h1>Where should we send your order?</h1>
-        <form action="">
-            <h2>Enter your name and address:</h2>
-            <input type="text" name="" id="" placeholder="First Name">
-            <input type="text" name="" id="" placeholder="Last Name">
-            <input type="text" name="" id="" placeholder="Street Address">
-            <input type="text" name="" id="" placeholder="Apt, Suite, Building (Optional)">
-            <input type="number" name="" id="" placeholder="Zip Code">
-            <select name="" id="">
-                <option value="">Brooklyn, NY</option>
-                <option value="">Other</option>
-            </select>
-            <input type="text" name="" id="" placeholder="Country/Region">
-            <input type="checkbox" name="business-address" id="">
-            <label for="business-address">This is a business address. <button></button></label>
-
-            <h2>What's your contact information?</h2>
-            <input type="email" name="" id="" placeholder="Email Address">
-            <input type="tel" name="" id="" placeholder="Phone Number">
-        </form>
+        <section class="checkout">
+            <div class="checkout__header">
+                <h2 class="checkout__title">Checkout</h2>
+                <p class="checkout__summery">Show Order Summery: $381.05</p>
+            </div>
+            <form class="checkout__form" action="">
+                <div class="checkout__shipping-header-container">
+                    <h1 class="checkout__shipping-header">Where should we send your order?</h1>
+                </div>
+                <fieldset>
+                    <legend>Enter your name and address:</legend>
+                    <div class="checkout__shipping-inputs">
+                        <input type="text" name="" id="" placeholder="First Name" required>
+                        <input type="text" name="" id="" placeholder="Last Name" required>
+                        <input type="text" name="" id="" placeholder="Street Address" required>
+                        <input type="text" name="" id="" placeholder="Apt, Suite, Building (Optional)" required>
+                        <div class="checkout__zip-city-container">
+                            <input type="number" name="" id="" placeholder="Zip Code" required>
+                            <select name="" id="" required>
+                                <option value="">Brooklyn, NY</option>
+                                <option value="">Other</option>
+                            </select>
+                        </div>
+                        <input type="text" name="" id="" placeholder="Country/Region" required>
+                        <div class="checkout__business-address-container">
+                            <input class="checkout__business-address-input" type="checkbox" name="business-address" id="" required>
+                            <label class="checkout__business-address-label" for="business-address">This is a business address.<button></button></label>
+                            <button class="checkout__business-address-button"><img src="./assets/icons/question-mark.svg" alt="help icon"></button>
+                        </div>
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your contact information?</legend>
+                    <div class="checkout__email-number-inputssection">
+                        <div class="checkout__email-number-container">
+                            <input class="checkout__email-number-container-input" type="email" name="" id="" placeholder="Email Address" required>
+                            <p class="checkout__email-number-container-text">We'll email you a receipt and send order updates to your mobile phone via SMS or iMessage.</p>
+                        </div>
+                        <div class="checkout__email-number-container">
+                            <input class="checkout__email-number-container-input" type="tel" name="" id="" placeholder="Phone Number" required>
+                            <p class="checkout__email-number-container-text">The phone number you enter can't be changed after you palce your order, so please make sure it's correct.</p>
+                        </div>
+                    </div>
+                </fieldset>
+                <div>
+                    <div class="checkout__share">
+                        <p>Share shipping updates with someone else:</p>
+                        <a class="checkout__emailaddress-link">
+                            <div class="checkout__emailaddress-container">
+                                <p>Enter an email address</p>
+                                <img src="./assets/icons/chevron-down-blue.svg" alt="open email input">
+                            </div> 
+                        </a>
+                    </div>
+                </div>
+                <div class="checkout__buttons-container">
+                    <button class="checkout__button checkout__button-payment" href="#">Continue to Payment</button>
+                    <a class="checkout__button checkout__button-shopping" href="./index.html">Continue Shopping</a>
+                </div>
+            </form>
+        </section>
     </main>
     <footer>
         <nav class="breadcrumbs"> 
