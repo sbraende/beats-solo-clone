@@ -7,6 +7,13 @@ body {
     align-items: center;
 }
 
+main{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .main-header{
     width: 100%;
     max-width: 1380px;
@@ -235,7 +242,8 @@ body {
 }
 
 .features__title{
-    font-size: 32px;
+    font-size: 30px;
+    padding-bottom: var(--padding-large);
 }
 
 .features__grid{
@@ -253,6 +261,159 @@ body {
 
 .features__icon{
    height: 50px;
+}
+
+.tech-specs{
+    margin: 0 auto;
+    max-width: 1306px;
+    width: 90%;
+    padding: var(--padding-large) 0 var(--padding-extra-large) 0;
+    border-bottom: 1px solid var(--color-dividers);
+}
+
+.tech-specs__title{
+    font-size: 1.2rem;
+}
+
+.tech-specs__icon{
+    width: 23px;
+    height: 23px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+
+.video{
+    padding: var(--padding-xxl) 0;
+    margin: 0 auto;
+    max-width: 1092px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+}
+
+.video__container{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.video__content{
+    width: 100%;
+}
+
+.video__play-icon{
+    display: none;
+}
+
+.email-list{
+    width: 100%;
+    padding: var(--padding-xxl) 0 4.5rem 0;
+    margin: 0 auto;
+    text-align: center;
+    color: var(--color-primary-white);
+    background-color: var(--color-primary-black);
+    display: flex;
+    flex-direction: column;
+    gap: var(--padding-extra-large);
+    align-items: center;
+    line-height: 130%;
+}
+
+.email-list__mail-icon{
+    width: 40px;
+    height: 40px;
+}
+
+.email-list__input{
+    width: 300px;
+    color: var(--color-primary-white);
+    background-color: transparent;
+    padding: 20px 20px;
+    border: 2px solid var(--color-primary-white);
+    border-radius: var(--padding-large); 
+}
+
+.email-list__input::placeholder{
+    color: var(--color-primary-white);
+}
+
+footer{
+    padding: var(--padding-medium) 0 var(--padding-xxl) 0;
+    width: 90%;
+    max-width: 1320px;
+}
+
+
+.breadcrumbs{
+    padding: var(--padding-large) 0;
+    display: flex;
+    gap: var(--padding-extra-small);
+    align-items: center;
+}
+
+.breadcrumbs__icon{
+    width: 16px;
+}
+
+
+.sitenav{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-around;
+    font-size: 0.9rem;
+}
+
+.sitenav__category-title{
+    font-weight: 700;
+    padding-bottom: var(--padding-large);
+}
+
+.sitenav__category-title-2nd{
+    padding-top: var(--padding-xxl);
+}
+
+.sitenav__category-links{
+    display: flex;
+    flex-direction: column;
+    gap: 0.9rem;
+}
+
+.sitenav__category-links > a{
+    padding-bottom: 4px;
+    color: black;
+    font-weight: 300;
+    width: fit-content;
+    border-bottom: 2px solid transparent;
+}
+
+.sitenav__category-links > a:hover {
+    border-bottom: 2px solid #e01e3c;
+}
+
+.sitenav__locale{
+    width: 215px;
+    cursor: pointer;
+}
+
+.sitenav__social{
+    display: flex;
+    gap: var(--padding-medium);
+}
+
+.sitenav__social > img {
+    width: 30px;
+}
+
+.copyright{
+    padding: 6rem 0 8rem 0;
+    text-align: center;
+    color: var(--color-secondary-gray);
+}
+
+.copyright__link{
+    color: var(--color-secondary-gray);
+    text-decoration: underline;
 }
 
 @media screen and (max-width: 1024px) {
@@ -297,6 +458,34 @@ body {
 
     .product__header{
         font-size: 32px;
+    }
+
+    .video{
+        width: 80%;
+    }
+
+    .sitenav{
+        grid-template-columns: 1fr;
+        grid-template-rows: repeat(5, auto);
+    }
+
+    .sitenav__category-title{
+        padding: var(--padding-medium) 0;
+        border-top: 1px solid var(--color-secondary-gray);
+    }
+
+    .sitenav__title-followus{
+        display: none;
+    }
+
+    .sitenav__category-links{
+        display: none;
+    }
+
+    .sitenav__social-section{
+        padding-top: var(--padding-xxl);
+        display: flex;
+        justify-content: center;
     }
 }
 
@@ -389,8 +578,32 @@ body {
     }
 
     .features__grid{
+        position: relative;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
         gap: var(--padding-large);
+    }
+
+    .video__container{
+        width: 315px;
+        height: 350px;
+    }
+    
+    .video__content{
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+
+    .video__play-icon{
+        display: block;
+        position: absolute;
+        top: var(--padding-medium);
+        left: var(--padding-medium);
+        width: 50px;
+        height: 50px;
+    }
+
+    .email-list__input{
+        width: 90%;
     }
 }

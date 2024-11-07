@@ -11,7 +11,7 @@
 <body>
     <header class="main-header">
         <div class="main-header__logo-container">
-            <a href="#"><img class="main-header__logo-img" src="./assets/images/beats-logo.png"></a>
+            <a href="#"><img class="main-header__logo-img" src="./assets/icons/beats-logo.png"></a>
         </div>
         <nav class="main-header__nav">
             <ul class="main-header__nav-list">
@@ -36,26 +36,23 @@
             </div>
         </section>
         <section class="product">
-
             <div class="product__image-container">
                 <div class="product__thumbnail-container" >
-                     <img class="product__thumbnail-img" src="./assets/images/black-01-solo-product01.jpg" alt="product image of black beats headphones three quarter angle">
-                     <img class="product__thumbnail-img" src="./assets/images/black-02-solo-product01.jpg" alt="black beats headphones on man">
-                     <img class="product__thumbnail-img" src="./assets/images/black-03-solo4.jpg.large.2x.jpg" alt="product image of black beats headphones front on">
-                     <img class="product__thumbnail-img" src="./assets/images/black-04-solo4.jpg.large.2x.jpg" alt="beats headphones pairing with iphone">
-                     <img class="product__thumbnail-img" src="./assets/images/black-05-solo4.jpg.large.2x.jpg" alt="blue beats headphones on man">
-                     <img class="product__thumbnail-img" src="./assets/images/black-06-solo4.jpg.large.2x.jpg" alt="black beat headphones folded product image">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-01-solo-product01.jpg" alt="product image of black beats headphones three quarter angle">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-02-solo-product01.jpg" alt="black beats headphones on man">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-03-solo4.jpg.large.2x.jpg" alt="product image of black beats headphones front on">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-04-solo4.jpg.large.2x.jpg" alt="beats headphones pairing with iphone">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-05-solo4.jpg.large.2x.jpg" alt="blue beats headphones on man">
+                     <img class="product__thumbnail-img" src="./assets/images/product-photos/black-06-solo4.jpg.large.2x.jpg" alt="black beat headphones folded product image">
                 </div>
                 <div class="product__main-image-container">
-                    <img class="product__main-product-image" src="./assets/images/black-01-solo-product01-square.webp" alt="product image of black beats headphones three quarter angle">
+                    <img class="product__main-product-image" src="./assets/images/product-photos/black-01-solo-product01-square.webp" alt="product image of black beats headphones three quarter angle">
                 </div>
             </div>
-
             <div class="product__title">
                 <h1 class="product__header">Beats Solo 4</h1>
                 <p class="product__slogan">Stands Out. Stays On.</p>
             </div>
-            
             <div class="product__details">
                 <p class="product__price">$199.99</p>
                     <p>Color: <b>Matte Black</b></p>
@@ -65,12 +62,10 @@
                         <input class="product__radio" type="radio" name="color" id="Cloud Pink" required disabled>
                         <input class="product__radio" type="radio" name="color" id="Charged Black" required disabled>
                     </div>
-
                 <button class="product__buy-button">
                     <p class="product__buy-text">ADD TO BAG</p>
-                    <img class="product__buy-icon" src="../src/assets/icons/apple-173-svgrepo-com-inverted.svg" alt="apple logo">
+                    <img class="product__buy-icon" src="./assets/icons/apple-173-svgrepo-com-inverted.svg" alt="apple logo">
                 </button>
-
                 <ul class="product__keyfeatures">
                     <li class="product__keyfeatures-list">
                         <div class="product__keyfeatures-container">
@@ -108,6 +103,7 @@
                 </ul>
             </div>
         </section>
+
         <section class="features">
             <h2 class="features__title">Beats Solo 4 - Bluetooth <sup>&#174</sup> Wireless On-Ear Headphones</h2>
             <div class="features__grid">
@@ -129,15 +125,117 @@
                 </div>
             </div>
         </section>
+
+        <section class="tech-specs">
+            <div class="tech-specs__container">
+                <h2 class="tech-specs__title">View Tech Specs</2>
+                <img class="tech-specs__icon" src="./assets/icons/down-arrow.png" alt="">
+            </div>
+        </section>
+
+        <section class="video">
+            <div class="video__container">
+                <video
+                    class="video__content"
+                    controls
+                    poster="./assets/images/video_posters/video_poster.png"
+                >
+                    <a href="./assets/videos/solo4-behind-the-design.mp4.rendition.mp4">Download video</a>
+                    <source src="./assets/videos/solo4-behind-the-design.mp4.rendition.mp4" type="video/mp4">
+                </video>
+                <img class="video__play-icon" src="./assets/icons/play.svg" alt="">
+            </div>
+        </section>
+
+        <section class="email-list">
+            <img class="email-list__mail-icon" src="./assets/icons/mail.svg" alt="">
+            <h2 class="email-list__title">Join Our List</h2>
+            <p>Don't miss a beat. Stay up to date on the latest products, deals and more.</p>
+            <input 
+                class="email-list__input" 
+                type="email" 
+                name="" 
+                id=""
+                placeholder="Email Address"
+            >
+        </section>
     </main>
     <footer>
-        <nav class="menu">
-            <ul>
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Contact</a></li>
-            </ul>
-          </nav>
+        <nav class="breadcrumbs"> 
+            <img class="breadcrumbs__icon" src="./assets/icons/beats-logo.png" alt="">
+            <img class="breadcrumbs__icon" src="./assets/icons/chevron-right.svg" alt="">
+            <p>Headphones</p>
+            <img class="breadcrumbs__icon" src="./assets/icons/chevron-right.svg" alt="">
+            <p>Beats Solo 4</p>
+        </nav>
+        <div class="sitenav">
+            <div class="sitenav__category">
+                <p class="sitenav__category-title">Products</p>
+                <div class="sitenav__category-links">
+                    <a href="#">View All</a>
+                    <a href="#">Compare Products</a>
+                    <a href="#">Special Offers</a>
+                    <a href="#">Collaborations</a>
+                    <a href="#">Beats iPhone Cases</a>
+                    <a href="#">Beats Pill</a>
+                    <a href="#">Beats Solo 4</a>
+                    <a href="#">Beats Solo Buds</a>
+                    <a href="#">Beats Studio Pro</a>
+                    <a href="#">Beats Studio Buds +</a>
+                    <a href="#">Beats Fit Pro</a>
+                    <a href="#">Beats Flex</a>
+                </div>
+            </div>
+            <div class="sitenav__category">
+                <p class="sitenav__category-title">Support</p>
+                <div class="sitenav__category-links">
+                    <a href="#">Downloads</a>
+                    <a href="#">Product Help</a>
+                    <a href="#">Service & Warrenty</a>
+                    <a href="#">Register Your Beats</a>
+                    <a href="#">Update your Beats</a>
+                    <a href="#">Authorized Retailers</a>
+                    <a href="#">Contact Support</a>
+                    <a href="#">International Numbers</a>
+                </div>
+            </div>
+            <div class="sitenav__category">
+                <p class="sitenav__category-title">Company</p>
+                <div class="sitenav__category-links">
+                    <a href="#">About</a>
+                    <a href="#">Press</a>
+                    <a href="#">Beats Academy</a>
+                    <a href="#">Careers</a>
+                </div>
+                <p class="sitenav__category-title sitenav__category-title-2nd">Legal</p>
+                <div class="sitenav__category-links">
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy</a>
+                    <a href="#">Trademark</a>
+                    <a href="#">Promotion Terms</a>
+                </div>
+            </div>
+            <div class="sitenav__category">
+                <div>
+                    <p class="sitenav__category-title">Location</p>
+                    <img class="sitenav__locale" src="./assets/icons/locale.webp" alt="locale button">
+                </div>
+                <div class="sitenav__social-section">
+                    <p class="sitenav__category-title sitenav__category-title-2nd sitenav__title-followus">Follow Us</p>
+                    <div class="sitenav__social">
+                        <img src="./assets/icons/x.svg" alt="x social">
+                        <img src="./assets/icons/facebook.svg" alt="facebook social">
+                        <img src="./assets/icons/youtube.svg" alt="youtube social">
+                        <img src="./assets/icons/instagram.svg" alt="instagram social">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Design clone based off 
+                <a class="copyright__link" href="https://www.beatsbydre.com/headphones/solo4-wireless/MUW23/solo4-matteblack">Apple Inc - Beats</a>
+            </p>
+        </div>
     </footer>
 </body>
 </html>
