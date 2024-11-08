@@ -36,6 +36,10 @@ main{
     color: var(--color-primary-blue);
 }
 
+.checkout__summery-small{
+    display: none;
+}
+
 .checkout__form{
     padding: var(--padding-extra-large) 0;
     display: flex;
@@ -69,7 +73,7 @@ legend{
 input, select{
     padding: var(--padding-medium) var(--padding-large);
     font-size: var(--font-size-medium);
-    border: 2px solid var(--color-tertiary-gray);
+    border: 1px solid var(--color-tertiary-gray);
     border-radius: var(--padding-medium);
 }
 
@@ -86,6 +90,7 @@ input, select{
 .checkout__business-address-container{
     display: flex;
     gap: var(--padding-small);
+    align-items: center;
 }
 
 .checkout__business-address-input{
@@ -119,8 +124,7 @@ input, select{
 }
 
 .checkout__email-number-container-input{
-    max-width: 490px;
-    width: 80%;
+    min-width: 490px;
 }
 
 .checkout__email-number-container-text{
@@ -152,7 +156,6 @@ input, select{
 
 .checkout__button{
     max-width: 490px;
-    width: 40%;
     padding: var(--padding-medium) var(--padding-large);
     font-size: var(--font-size-medium);
     border-radius: var(--padding-medium);
@@ -171,3 +174,52 @@ input, select{
     background-color: var(--color-primary-blue);
 }
 
+@media screen and (max-width: 768px){
+    .checkout{
+        max-width: none;
+        width: 90%;
+    }
+
+    .checkout__summery-large{
+        display: none;
+    }
+
+    .checkout__summery-small{
+        display: block;
+    }
+
+    .checkout__shipping-header{
+        font-size: var(--font-size-large);
+    }
+
+    legend{
+        font-size: 1.2rem;
+    }
+
+    .checkout__shipping-inputs{
+        max-width: none;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        gap: var(--padding-medium);
+    }
+
+    .checkout__zip-city-container{
+        flex-direction: column;
+    }
+
+    .checkout__email-number-container{
+        flex-direction: column;
+        gap: var(--padding-small);
+    }
+
+    .checkout__email-number-container-input{
+        max-width: none;
+        width: 100%;
+    }
+    
+    .checkout__button{
+        max-width: none;
+        width: 100%;
+    }
+};
