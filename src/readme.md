@@ -4,6 +4,8 @@ This project has two webpages:
 	2. Webpage that contains a form to order the headphones. 
 
 GitHub repository:
+https://github.com/sbraende/beats-solo-clone
 
 Netlify deployment:
+https://sbraende-beats-solo.netlify.app
 
