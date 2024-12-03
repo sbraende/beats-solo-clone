@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,6 +11,7 @@
     <link rel="stylesheet" href="./css/footer.css">
     <link rel="stylesheet" href="./css/checkout.css">
 </head>
+
 <body>
     <header class="main-header">
         <div class="main-header__logo-container">
@@ -17,15 +19,20 @@
         </div>
         <nav class="main-header__nav">
             <ul class="main-header__nav-list">
-                <li class="main-header__nav-list-item"><a href="#"><p>Shop</p></a></li>
-                <li class="main-header__nav-list-item"><a href="#"><p>Support</p></a></li>
+                <li class="main-header__nav-list-item"><a href="#">
+                        <p>Shop</p>
+                    </a></li>
+                <li class="main-header__nav-list-item"><a href="#">
+                        <p>Support</p>
+                    </a></li>
             </ul>
         </nav>
         <a class="main-header__nav-hamburger" href="#">
             <img src="./assets/icons/menu.svg" alt="">
         </a>
         <div class="main-header__search-container">
-            <a href=""><img class="main-header__search-icon" src="./assets/icons/search-sharp.svg" alt="Search icon"></a>
+            <a href=""><img class="main-header__search-icon" src="./assets/icons/search-sharp.svg"
+                    alt="Search icon"></a>
         </div>
     </header>
     <main>
@@ -42,22 +49,26 @@
                 <fieldset>
                     <legend>Enter your name and address:</legend>
                     <div class="checkout__shipping-inputs">
-                        <input type="text" name="" id="" placeholder="First Name" required>
-                        <input type="text" name="" id="" placeholder="Last Name" required>
-                        <input type="text" name="" id="" placeholder="Street Address" required>
-                        <input type="text" name="" id="" placeholder="Apt, Suite, Building (Optional)" required>
+                        <input type="text" name="" id="" placeholder="First Name" maxlength="30" required>
+                        <input type="text" name="" id="" placeholder="Last Name" maxlength="30" required>
+                        <input type="text" name="" id="" placeholder="Street Address" maxlength="30" required>
+                        <input type="text" name="" id="" placeholder="Apt, Suite, Building (Optional)" maxlength="30">
                         <div class="checkout__zip-city-container">
                             <input type="number" name="" id="" placeholder="Zip Code" required>
                             <select name="" id="" required>
+                                <option value="" disabled selected>Select a city</option>
                                 <option value="">Brooklyn, NY</option>
                                 <option value="">Other</option>
                             </select>
                         </div>
-                        <input type="text" name="" id="" placeholder="Country/Region" required>
+                        <input type="text" name="" id="" placeholder="Country/Region" maxlength="20" required>
                         <div class="checkout__business-address-container">
-                            <input class="checkout__business-address-input" type="checkbox" name="business-address" id="" required>
-                            <label class="checkout__business-address-label" for="business-address">This is a business address.<button></button></label>
-                            <button class="checkout__business-address-button"><img src="./assets/icons/question-mark.svg" alt="help icon"></button>
+                            <input class="checkout__business-address-input" type="checkbox" name="business-address"
+                                id="">
+                            <label class="checkout__business-address-label" for="business-address">This is a business
+                                address.<button></button></label>
+                            <button class="checkout__business-address-button"><img
+                                    src="./assets/icons/question-mark.svg" alt="help icon"></button>
                         </div>
                     </div>
                 </fieldset>
@@ -65,12 +76,17 @@
                     <legend>What's your contact information?</legend>
                     <div class="checkout__email-number-inputssection">
                         <div class="checkout__email-number-container">
-                            <input class="checkout__email-number-container-input" type="email" name="" id="" placeholder="Email Address" required>
-                            <p class="checkout__email-number-container-text">We'll email you a receipt and send order updates to your mobile phone via SMS or iMessage.</p>
+                            <input class="checkout__email-number-container-input" type="email" name="" id=""
+                                placeholder="Email Address" required>
+                            <p class="checkout__email-number-container-text">We'll email you a receipt and send order
+                                updates to your mobile phone via SMS or iMessage.</p>
                         </div>
                         <div class="checkout__email-number-container">
-                            <input class="checkout__email-number-container-input" type="tel" name="" id="" placeholder="Phone Number" required>
-                            <p class="checkout__email-number-container-text">The phone number you enter can't be changed after you palce your order, so please make sure it's correct.</p>
+                            <input class="checkout__email-number-container-input" type="tel" name="" id=""
+                                placeholder="Phone Number" pattern="[0-9]{10}" required>
+                            <p class="checkout__email-number-container-text">The phone number you enter can't be changed
+                                after you palce your order, so please make sure it's correct. Please provide a phone
+                                number with 10 digits.</p>
                         </div>
                     </div>
                 </fieldset>
@@ -81,7 +97,7 @@
                             <div class="checkout__emailaddress-container">
                                 <p>Enter an email address</p>
                                 <img src="./assets/icons/chevron-down-blue.svg" alt="open email input">
-                            </div> 
+                            </div>
                         </a>
                     </div>
                 </div>
@@ -94,7 +110,7 @@
         </section>
     </main>
     <footer>
-        <nav class="breadcrumbs"> 
+        <nav class="breadcrumbs">
             <img class="breadcrumbs__icon" src="./assets/icons/beats-logo.png" alt="">
             <img class="breadcrumbs__icon" src="./assets/icons/chevron-right.svg" alt="">
             <p>Headphones</p>
@@ -177,10 +193,13 @@
             </div>
         </div>
         <div class="copyright">
-            <p>Design clone based off 
-                <a class="copyright__link" href="https://www.beatsbydre.com/headphones/solo4-wireless/MUW23/solo4-matteblack">Apple Inc - Beats</a>
+            <p>Design clone based off
+                <a class="copyright__link"
+                    href="https://www.beatsbydre.com/headphones/solo4-wireless/MUW23/solo4-matteblack">Apple Inc -
+                    Beats</a>
             </p>
         </div>
     </footer>
 </body>
+
 </html>
